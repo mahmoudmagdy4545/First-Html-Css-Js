@@ -1,0 +1,89 @@
+*{
+    margin: 0;/*It defines the amount of space between an element and its neighboring elements.*/
+    padding:0; /* el msafat mn gnb */
+}
+body{
+    background: linear-gradient(#200016,#10001f);
+    height:100vh;
+    font-family: "system-ui";
+}
+a{
+    text-decoration: none; /* btshel el 5t el t7t el links */
+    color:#fff;
+} 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;/*3shan el klam yb2a fo2 el sora*/
+    display: flex;/*3shan kol 7aga tb2a gmb b3dha*/
+    justify-content: space-between;/*e3mly msafa benhom*/
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+     font-size: 30px;
+     text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;/*btshel el no2t el soda el gmb el list*/
+}
+header ul li{
+    margin-right: 30px;/*msafa ben kol list l el ymen 30px*/
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;/*bt3mlk shakl dayra 7walen el klma*/
+}
+header ul li a:hover,.active{
+    background: #fff;
+    color: #200016;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.main::after{
+content:'';
+position: absolute;
+bottom: 0;
+height: 100px;
+width: 100%;
+background: linear-gradient(to top ,#200016,transparent);
+}
+.main img{
+    position: absolute;
+    width :100%;
+    height: 100vh;
+    object-fit: cover;/*to make the image fit {msh mshdoda msln}*/
+}
+#moon{
+    mix-blend-mode:screen;
+    object-fit: contain;/*to make the moon fully screened without any crop*/
+    transform: translateY(40px);
+}
+.Nouvil{
+    color:#fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-180px);
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
